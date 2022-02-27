@@ -35,15 +35,19 @@ def reset():
 
 
 def checkwin():
-    if (player.score == 1):
+    if (player.score == 10):
         SCREEN.fill(Black)
         write("Player wins!", screen_width / 2,
-              screen_height / 2, 150, White, SCREEN)
+              screen_height / 2 - 100, 150, White, SCREEN)
+        write("Press Space to play again", screen_width /
+              2, screen_height / 2 + 40, 100, White, SCREEN)
         reset()
         pause(fps)
-    elif (bot.score == 1):
+    elif (bot.score == 10):
         SCREEN.fill(Black)
         write("Bot wins!", screen_width / 2,
-              screen_height / 2, 150, White, SCREEN)
+              screen_height / 2 - 100, 150, White, SCREEN)
+        write("Press Space to play again", screen_width /
+              2, screen_height / 2 + 40, 100, White, SCREEN)
         reset()
         pause(fps)
